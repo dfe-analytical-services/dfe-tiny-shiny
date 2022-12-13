@@ -3,7 +3,7 @@ ui <- function(input, output, session) {
       fluidRow(
         width = 12,
         column(
-          4,
+          width=6,
           selectizeInput("filter1",
             label = "Filter 1",
             choices = c("England", "North East", "Yorkshire and the Humber"),
@@ -11,7 +11,7 @@ ui <- function(input, output, session) {
           )
         ),
         column(
-          4,
+          width=6,
           selectizeInput("filter2",
             label = "Filter 2",
             choices = c("All", "Primary", "Secondary"),
